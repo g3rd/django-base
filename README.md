@@ -1,28 +1,25 @@
-django-base
-===========
+# django-base
 
-A project template for Django 1.6.
+A project template for Django 1.7 (still in beta).
 
 To use this project follow these steps:
 
-#. Create your working environment
-#. Install Django
-#. Create the new project using the mysite template
-#. Install additional dependencies
-#. Use the Django admin to create the project
+1. Create your working environment
+2. Install Django
+3. Create the new project using the mysite template
+4. Install additional dependencies
+5. Use the Django admin to create the project
 
 *note: these instructions show creation of a project called "mysite".  You
 should replace this name with the actual name of your project.*
 
-Working Environment
-===================
+## Working Environment
 
 You have several options in setting up your working environment.  We recommend
 using virtualenv to separate the dependencies of your project from your system's
 python environment.  If on Linux or Mac OS X, you can also use virtualenvwrapper to help manage multiple virtualenvs across different projects.
 
-Virtualenv Only
----------------
+### Virtualenv Only
 
 First, make sure you are using virtualenv (http://www.virtualenv.org). Once
 that's installed, create your virtualenv::
@@ -33,8 +30,7 @@ You will also need to ensure that the virtualenv has the project directory
 added to the path. Adding the project directory will allow `django-admin.py` to
 be able to change settings using the `--settings` flag.
 
-Virtualenv with virtualenvwrapper
---------------------------
+### Virtualenv with virtualenvwrapper
 
 In Linux and Mac OSX, you can install virtualenvwrapper (http://virtualenvwrapper.readthedocs.org/en/latest/),
 which will take care of managing your virtual environments and adding the
@@ -44,8 +40,7 @@ project path to the `site-directory` for you::
     $ mkvirtualenv -a mysite mysite-dev
     $ cd mysite && add2virtualenv `pwd`
 
-Windows
-----------
+### Windows
 
 In Windows, or if you're not comfortable using the command line, you will need
 to add a `.pth` file to the `site-packages` of your virtualenv. If you have
@@ -63,23 +58,20 @@ virtualenvwrapper):
     /home/<youruser>/mysite/mysite/
     import sys; new=sys.path[sys.__plen:]; del sys.path[sys.__plen:]; p=getattr(sys,'__egginsert',0); sys.path[p:p]=new; sys.__egginsert = p+len(new)
 
-Installing Django
-=================
+## Installing Django
 
 To install Django in the new virtual environment, run the following command::
 
     $ pip install https://www.djangoproject.com/download/1.7c1/tarball/
 
-Creating your project
-=====================
+## Creating your project
 
 To create a new Django project called '**mysite**' using
 django-base, run the following command::
 
     $ django-admin.py startproject --template=https://github.com/g3rd/django-base/archive/master.zip --extension=py,rst,html mysite_project
 
-Installation of Dependencies
-=============================
+## Installation of Dependencies
 
 Depending on where you are installing dependencies:
 
