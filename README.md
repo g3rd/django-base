@@ -62,7 +62,7 @@ virtualenvwrapper):
 
 To install Django in the new virtual environment, run the following command::
 
-    $ pip install https://www.djangoproject.com/download/1.7c1/tarball/
+    $ pip install https://www.djangoproject.com/download/1.7c3/tarball/
 
 ## Creating your project
 
