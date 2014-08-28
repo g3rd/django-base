@@ -1,7 +1,7 @@
-Django==1.7c1
-bpython==0.13
+Django==https://www.djangoproject.com/download/1.7c3/tarball/
+bpython==0.13.1
 django-braces==1.4.0
-django-model-utils==2.0.3
+django-model-utils==2.2
 logutils==0.3.3
-django-extensions==1.3.8
+django-extensions==1.3.11
 Werkzeug==0.9.6
