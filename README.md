@@ -1,6 +1,6 @@
 # django-base
 
-A project template for Django 1.7 (still in beta).
+A project template for Django 1.7.
 
 To use this project follow these steps:
 
@@ -62,7 +62,7 @@ virtualenvwrapper):
 
 To install Django in the new virtual environment, run the following command::
 
-    $ pip install https://www.djangoproject.com/download/1.7c3/tarball/
+    $ pip install django
 
 ## Creating your project
 
